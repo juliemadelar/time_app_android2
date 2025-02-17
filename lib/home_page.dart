@@ -1,7 +1,6 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'time_in_page.dart';
 import 'timesheet_page.dart';
 import 'settings_page.dart';
@@ -17,19 +16,18 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'My Time Logger',
-          style: GoogleFonts.grechenFuemen(
-            textStyle: TextStyle(
-              fontSize: 24.0, // Make the title bigger
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              shadows: [
-                Shadow(
-                  offset: Offset(2.0, 2.0),
-                  blurRadius: 3.0,
-                  color: Color.fromARGB(255, 0, 0, 0),
-                ),
-              ],
-            ),
+          style: TextStyle(
+            fontFamily: 'Poppins',
+            fontSize: 24.0, // Make the title bigger
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            shadows: [
+              Shadow(
+                offset: Offset(2.0, 2.0),
+                blurRadius: 3.0,
+                color: Color.fromARGB(255, 0, 0, 0),
+              ),
+            ],
           ),
         ),
         centerTitle: true, // Center the title

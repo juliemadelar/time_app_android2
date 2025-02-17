@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class SettingsPage extends StatefulWidget {
   final Function(bool) onThemeChanged;
@@ -46,19 +45,18 @@ class _SettingsPageState extends State<SettingsPage> {
       appBar: AppBar(
         title: Text(
           'Settings',
-          style: GoogleFonts.grechenFuemen(
-            textStyle: TextStyle(
-              fontSize: 24.0, // Make the title bigger
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              shadows: [
-                Shadow(
-                  offset: Offset(2.0, 2.0),
-                  blurRadius: 3.0,
-                  color: Color.fromARGB(255, 0, 0, 0),
-                ),
-              ],
-            ),
+          style: TextStyle(
+            fontFamily: 'Poppins',
+            fontSize: 24.0, // Make the title bigger
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            shadows: [
+              Shadow(
+                offset: Offset(2.0, 2.0),
+                blurRadius: 3.0,
+                color: Color.fromARGB(255, 0, 0, 0),
+              ),
+            ],
           ),
         ),
         centerTitle: true, // Center the title

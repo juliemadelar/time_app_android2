@@ -207,19 +207,18 @@ class TimesheetPageState extends State<TimesheetPage> {
       appBar: AppBar(
         title: Text(
           'Timesheet',
-          style: GoogleFonts.grechenFuemen(
-            textStyle: TextStyle(
-              fontSize: 24.0, // Make the title bigger
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              shadows: [
-                Shadow(
-                  offset: Offset(2.0, 2.0),
-                  blurRadius: 3.0,
-                  color: Color.fromARGB(255, 0, 0, 0),
-                ),
-              ],
-            ),
+          style: TextStyle(
+            fontFamily: 'Poppins',
+            fontSize: 24.0, // Make the title bigger
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            shadows: [
+              Shadow(
+                offset: Offset(2.0, 2.0),
+                blurRadius: 3.0,
+                color: Color.fromARGB(255, 0, 0, 0),
+              ),
+            ],
           ),
         ),
         centerTitle: true, // Center the title

@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class TimeInPage extends StatefulWidget {
   final Map<String, dynamic>? initialRecord;
@@ -154,19 +153,18 @@ class _TimeInPageState extends State<TimeInPage> {
       appBar: AppBar(
         title: Text(
           'Time In',
-          style: GoogleFonts.grechenFuemen(
-            textStyle: TextStyle(
-              fontSize: 24.0, // Make the title bigger
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              shadows: [
-                Shadow(
-                  offset: Offset(2.0, 2.0),
-                  blurRadius: 3.0,
-                  color: Color.fromARGB(255, 0, 0, 0),
-                ),
-              ],
-            ),
+          style: TextStyle(
+            fontFamily: 'DarumadropOne-Regular',
+            fontSize: 24.0, // Make the title bigger
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            shadows: [
+              Shadow(
+                offset: Offset(2.0, 2.0),
+                blurRadius: 3.0,
+                color: Color.fromARGB(255, 0, 0, 0),
+              ),
+            ],
           ),
         ),
         centerTitle: true, // Center the title
